@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="adifli.sql_json_v2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/alarme"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name=".login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bienvenue"
+            android:label="@string/title_activity_bienvenue"
+            android:parentActivityName=".login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="adifli.sql_json_v2.login" />
+        </activity>
+        <activity
+            android:name=".alarms"
+            android:label="@string/title_activity_alarms" >
+        </activity>
+        <service
+            android:name="service.UpdateVilleService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="service.UpdatePosteService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

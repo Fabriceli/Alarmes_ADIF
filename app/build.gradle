@@ -1,0 +1,33 @@
+//declarer ca c'est une application de Android
+apply plugin: 'com.android.application'
+
+android {
+    //la version de compilation
+    compileSdkVersion 22
+    //la versin de buildtools
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        //le nom de l'application
+        applicationId "adifli.sql_json_v2"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            //
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    //compiler tous les paquet de jar
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile files('libs/android-async-http-1.4.3.jar')
+}

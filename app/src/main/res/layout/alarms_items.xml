@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff12b4ff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llH"
+        android:background="#ff12b4ff"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_de_banda"
+            android:textColor="#ffffff"
+            android:id="@+id/tvBandaId"
+            android:textSize="22dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+            android:id="@+id/tvPoint"
+            android:layout_marginRight="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Banda_de_regulacion"
+            android:id="@+id/tvBanda"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:id="@+id/tvBabdaTotal"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_marginLeft="15dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/ivLignecoupe"
+        android:background="#ffffff"
+        android:layout_below="@+id/llH"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivLignecoupe"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llNumeroAlarms"
+            android:orientation="horizontal"
+            android:background="#ff12b4ff"
+            >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

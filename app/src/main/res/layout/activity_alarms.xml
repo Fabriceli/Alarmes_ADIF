@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ff12b4ff">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHAMARTIN"
+        android:id="@+id/tvVilleId"
+        android:textSize="30sp"
+        android:background="@drawable/shape_textview"
+        android:textColor="@android:color/black"
+        android:gravity="center" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvVilleId"
+        android:focusable="false"
+        android:id="@+id/lvAlarm"
+        android:background="#ff12b4ff" />
+</RelativeLayout>
