@@ -112,6 +112,7 @@ public class AlarmeDialogAdapter extends BaseAdapter{
         return convertView;
 
     }
+
     public class Holder{
         public TextView text;
         public View ll;
